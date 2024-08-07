@@ -42,8 +42,7 @@ library(gridExtra)
 library(wesanderson)
 library(scales)
 ################################################################################
-getwd()
-
+# NOTE: data available upon reasonable request. email first author (SRH)
 alinks <-read.table(file.choose(),sep=",") #we have 19 landmarks 
 alinks<-as.matrix(alinks)
 
