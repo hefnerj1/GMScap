@@ -42,7 +42,8 @@ library(gridExtra)
 library(wesanderson)
 library(scales)
 ################################################################################
-# NOTE: data available upon reasonable request. email first author (SRH)
+getwd()
+
 alinks <-read.table(file.choose(),sep=",") #we have 19 landmarks 
 alinks<-as.matrix(alinks)
 
@@ -389,9 +390,12 @@ sum(diag(prop.table(ct2)))
 #linear data
 mcc.1<-mcc(confusionM = matrix(c(390,42,44,776), nrow = 2))
 mcc.1
+
 #GM data
 mcc.2<-mcc(confusionM = matrix(c(39,9,3,55), nrow = 2))
 mcc.2
+
+
 ################################################################################
 # end of program
 ################################################################################
